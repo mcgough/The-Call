@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Call</title>
+		<style>
+			body {
+				background-color: #06192E;
+			}
+			h1 {
+				margin-left: 100px;
+				font-size: 50px;
+				color: #4EAE47;
+				font-style: italic;
+			}
+			h2 {
+				color: white;
+				margin: 700px 0 0 60px;
+				font-style: italic;
+
+			}
+			p {
+				color: #ACB6BC;
+				margin-left: 165px;
+			}
+			img {
+				height: 350px;
+				width: 450px;
+				border-radius: 5%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>"The Call"</h1>
+		<p>Dan McGough</p>
+		<script>
+			var playCall, emotion;
+			
+			//Story begins
+
+			alert("Imagine you are the offensive coordinator for the Seattle Seahawks...");
+			alert("It's the 4th quarter of the Super Bowl, and there are 20 seconds left on the clock...");
+			alert("Your team has just marched down the field and are now 1 yard away from a touchdown and eternal glory in the annals of the NFL...");
+
+			//User input
+
+			playCall = prompt("Are you going to call a \"run\" play or a \"pass\" play?");
+
+			//Output and consquences
+
+			while(playCall != "run" && playCall != "pass"){
+				playCall = prompt("It's as simple as calling a \"run\" or a \"pass\", Coach. What are you going to do?");
+			} 
+			if(playCall === "run"){
+				document.write('<img src="http://s.newsweek.com/sites/www.newsweek.com/files/styles/headline/public/2014/02/03/super-bowl-win-seattle.jpg?itok=9v7goy65" alt="Win"');
+				alert("Congratulations, Coach! Marshawn Lynch just scored a touchdown and your team has just won the Super Bowl for the second year in a row!");
+
+			//User input (experimented with more options)
+
+				/*emotion = prompt("On a scale from 1-10, tell us you're feeling at this very moment?!");
+				while(emotion > 10 && typeof emotion != "number"){
+					emotion = prompt("C'mon, Coach. Give us a realistic idea. 1-10");
+				}
+				if(emotion <= 5){
+					alert("Really?! That's too bad.");
+				}else if(emotion > 5){
+					alert("As you should. You've earned it, Coach. Great season!");
+				}*/
+
+				}else if(playCall === "pass"){
+				document.write('<img src="http://media.komonews.com/images/150202_sad_wagner_lg.jpg" alt="Loss"');
+				alert("You idiot! Russell Wilson just threw an interception! You just called a play that will forever live in infamy as one of the worst plays ever called in a Super Bowl!");
+				//alert("Oh well, there's always next year.");
+			}
+			//document.write('<h2>Go Hawks!</h2>');
+		</script>
+	</body>
+</html>
